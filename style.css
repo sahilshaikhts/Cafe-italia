@@ -1,0 +1,159 @@
+/*
+Theme Name: Cafe-italia
+Author: Sahil
+Description: Custom theme for Cafe-italia.
+Version: 1.0
+*/
+html {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@font-face {
+    font-family: Poppins;
+    font-weight: 900;
+
+    src: url('/wp-content/themes/CafeItalia/assets/fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 600;
+
+    src: url('/wp-content/themes/CafeItalia/assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 300;
+    src: url('/wp-content/themes/CafeItalia/assets/fonts/Poppins/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Rajdhani;
+    font-weight: 900;
+
+    src: url('/wp-content/themes/CafeItalia/assets/fonts/Rajdhani/Rajdhani-Bold.ttf');
+}
+
+@font-face {
+    font-family: Rajdhani;
+    font-weight: 600;
+
+    src: url('/wp-content/themes/CafeItalia/assets/fonts/Rajdhani/Rajdhani-Regular.ttf');
+}
+
+@font-face {
+    font-family: Rajdhani;
+    font-weight: 300;
+
+    src: url('/wp-content/themes/CafeItalia/assets/fonts/Rajdhani/Rajdhani-Light.ttf');
+}
+
+.font-primary {
+    font-family: Poppins;
+    font-weight: 900;
+}
+
+.font-primary-light {
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.font-secondary {
+    font-family: Rajdhani;
+    font-weight: 900;
+}
+
+.font-secondary-light {
+    font-family: Rajdhani;
+    font-weight: 600;
+}
+
+.icon-quote::before {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+
+    content: '\f10d';
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
+}
+
+.icon-quote::after {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+
+    content: '\f10e';
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
+}
+
+.background-color-nav {
+    background-color: hsl(44, 64%, 60%);
+}
+
+.background-color-main {
+    background-color: hsl(42, 35%, 78%);
+}
+
+.background-color-lighter {
+    background-color: hsl(50, 38%, 84%);
+    
+
+}
+
+.primary_nav_li {
+    font-family: Rajdhani;
+    font-weight: 900;
+    font-size: 1rem;
+    color: rgb(43, 33, 11);
+
+    padding: .5rem;
+}
+
+.primary_nav_li:hover {
+    color: rgb(255, 240, 200);
+}
+
+.gallery {
+    grid-auto-rows: 10rem;
+}
+
+#banner {
+    object-fit: cover;
+}
+
+.shop-grid {
+    display: grid;
+    width: 100%;
+    padding: 2rem;
+    gap: 6rem ;
+    grid-template-columns: repeat(auto-fit,250px);
+}
+.shop-card {
+  height: 100%;
+  border: 1px red solid;
+}
+
+@media screen and (min-width:720px) {
+    
+    .primary_nav_li {
+        font-size: 1.25rem;
+    }
+
+    .shop-card {
+        grid-auto-rows: 15rem;
+    }
+}

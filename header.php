@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full scroll-smooth snap-y snap-mandatory">
+<html class="h-full scroll-smooth snap-y snap-mandatory" <?php language_attributes()?>>
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -26,7 +26,7 @@
         wp_nav_menu(
             array(
                 'menu' => 'nav-menu',
-                'container' => '',
+                'container' => 'false',
                 'menu_class' => 'flex flex-row',
             ));
         ?>
